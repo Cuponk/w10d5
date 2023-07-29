@@ -14,7 +14,7 @@ const Root = props => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );

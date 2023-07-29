@@ -1,8 +1,16 @@
 import harvardArt from "./data/harvardArt";
+import GalleryNavigation from "./components/GallerryNavigation";
+import {Route, Switch, Redirect} from 'react-router-dom';
+
 function App() {
-  console.log(harvardArt)
+  const {records} = harvardArt
+  // console.log(records)
   return (
-    <h1>Hello from App</h1>
+    <>
+    <Route path='/' component={GalleryNavigation}/>
+    
+    <GalleryNavigation galleries={records}/>
+    </>
   );
 }
 
